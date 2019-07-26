@@ -1,0 +1,130 @@
+@media (max-width: 1200px) {
+  .wrap {
+    padding: 0 15px;
+  }
+  header .header-container .top-header .top-header-right-aside .header-menu a:last-child {
+    margin-right: 0;
+  }
+  .advantages .advantages-container .advantages-cards {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .brands .brands-container .brands-image img {
+    width: 800px;
+  }
+  .mobile-block .mobile-container .mobile-container-left-aside .mobile-container-left-aside-content {
+    transform: translateY(-35%);
+  }
+  .mobile-block .mobile-container .mobile-container-left-aside .mobile-container-left-aside-content h4 {
+    font-size: 2rem;
+  }
+  .mobile-block .mobile-container .mobile-container-left-aside .mobile-container-left-aside-content p {
+    font-size: 1rem;
+  }
+  .mobile-block .mobile-container .mobile-container-right-aside .mobile-image-first img {
+    width: 200px;
+  }
+  .mobile-block .mobile-container .mobile-container-right-aside .mobile-image-second img {
+    width: 200px;
+  }
+  .info-block .info-container h3 {
+    font-size: 2rem;
+  }
+  .info-block .info-container .info-container-text .info-left-aside p {
+    font-size: 1.1rem;
+  }
+  .info-block .info-container .info-container-text .info-right-aside p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 900px) {
+  header .header-container .top-header {
+    flex-direction: column;
+  }
+  header .header-container .top-header .top-header-left-aside {
+    justify-content: space-between;
+  }
+  header .header-container .top-header .top-header-right-aside {
+    justify-content: space-around;
+  }
+  header .header-container .top-header .top-header-right-aside .header-menu a:last-child {
+    border-right: none;
+  }
+  header .header-text-btn {
+    margin-top: 50px;
+  }
+  header .header-text-btn .header-text h2 {
+    font-size: 3rem;
+  }
+  .advantages .advantages-container .advantages-cards .advantages-card-unit {
+    padding: 20px;
+  }
+  .conditions .tab-container .content-wrap .content .tab-container-content .tab-container-content-text {
+    width: 50%;
+  }
+  .conditions .tab-container .content-wrap .content .tab-container-content .tab-container-content-text h3 {
+    font-size: 2rem;
+  }
+  .conditions .tab-container .content-wrap .content .tab-container-content .tab-container-content-text p {
+    font-size: 1rem;
+  }
+  .conditions .tab-container .content-wrap .content .tab-container-content .tab-container-content-image img {
+    width: 200px;
+  }
+  .brands .brands-container .brands-title h4 {
+    font-size: 2rem;
+  }
+  .brands .brands-container .brands-image img {
+    width: 500px;
+  }
+  .mobile-block {
+    padding-top: 220px;
+  }
+  .mobile-block .mobile-container {
+    padding: 50px 0 0 0;
+  }
+  .mobile-block .mobile-container .mobile-container-left-aside .mobile-container-left-aside-content {
+    transform: translateY(-40%);
+  }
+  .mobile-block .mobile-container .mobile-container-left-aside .mobile-container-left-aside-content h4 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  .mobile-block .mobile-container .mobile-container-left-aside .mobile-container-left-aside-content p {
+    font-size: 0.9rem;
+  }
+  .mobile-block .mobile-container .mobile-container-right-aside .mobile-image-first {
+    transform: translateY(-220px);
+  }
+  .mobile-block .mobile-container .mobile-container-right-aside .mobile-image-first img {
+    width: 150px;
+  }
+  .mobile-block .mobile-container .mobile-container-right-aside .mobile-image-second {
+    transform: translateY(-250px);
+  }
+  .mobile-block .mobile-container .mobile-container-right-aside .mobile-image-second img {
+    width: 150px;
+  }
+  .info-block {
+    padding: 0;
+  }
+  .info-block .info-container h3 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .info-block .info-container .info-container-text .info-left-aside {
+    margin-right: 50px;
+  }
+  .info-block .info-container .info-container-text .info-left-aside p {
+    font-size: 1rem;
+  }
+  .info-block .info-container .info-container-text .info-right-aside p {
+    font-size: 1rem;
+  }
+  footer .footer-container .footer-app-btns img {
+    width: 100px;
+  }
+  footer .footer-container .footer-social .social-icons img {
+    width: 32px;
+  }
+}

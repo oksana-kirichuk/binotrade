@@ -56,10 +56,67 @@ header {
 					img {
 					}
 				}
-				.header-drop {
-					span {
-						color: #fff;
+				.header-dropdown {
+					margin: 50px;
+					display: inline-block;
+					position: relative;
 
+					&.active {
+						.drop-menu {
+							opacity: 1;
+							visibility: visible;
+							transform: none;
+							cursor: pointer;
+						}
+					}
+
+					.drop-btn {
+						color: #fff;
+						display: inline-block;
+						color: #fff;
+						padding: 10px 20px;
+						border-radius: 3px;
+						cursor: pointer;
+						user-select: none;
+						-webkit-user-select: none;
+						-moz-user-select: none;
+
+						span {
+							color: #fff;
+							margin-left: 5px;
+						}
+
+
+					}
+					.drop-menu {
+						box-sizing: border-box;
+						min-width: 100%;
+						position: absolute;
+						top: 115%;
+						transform: translateY(-15px) scale(0.9);
+						left: 0;
+						background-color: #fff;
+						border: 1px solid #ddd;
+						border-radius: 3px;
+						opacity: 0;
+						visibility: hidden;
+						transition: all 0.2s ease;
+						
+						ul {
+							li {
+								a {
+									color: #fff;
+									display: block;
+									padding: 10px;
+								}
+
+								&:hover {
+									background-color: #8e44ad;
+									color: white;
+									cursor: pointer;
+								}
+							}
+						}
 					}
 				}
 			}
@@ -75,10 +132,16 @@ header {
 						cursor: pointer;
 						font-size: 15px;
 						font-weight: 500;
+
 						
 						&:last-child {
 							border-right: 1px solid #fff;
 							padding-right: 30px;
+						}
+
+						&:hover {
+							color: #00f9ff;
+							
 						}
 					}
 				}
@@ -97,9 +160,15 @@ header {
 							cursor: pointer;
 							font-size: 15px;
 							font-weight: 500;
+							outline: none;
+
 
 							&:hover {
 								border: 1px solid #fff;
+
+							}
+							&:active {
+								transform: scale(1.1);
 							}
 						}
 					}
@@ -113,11 +182,14 @@ header {
 							cursor: pointer;
 							font-size: 15px;
 							font-weight: 500;
-
+							outline: none;
 
 
 							&:hover {
 								border: 1px solid #fff;
+							}
+							&:active {
+								transform: scale(1.1);
 							}
 						}
 					}
@@ -211,7 +283,13 @@ header {
 				.card-image {
 					margin-right: 21px;
 
+
 					img {
+						transition: all 0.5s ease;
+
+						&:hover {
+							transform: scale(1.2);
+						}
 
 					}
 				}
@@ -253,6 +331,11 @@ header {
 				&.active {
 					color: #2e73fe;
 					border-bottom: 2px solid #2e73fe;
+				}
+
+				&:hover {
+					color: #2e73fe;
+
 				}
 			}
 		}
@@ -460,65 +543,95 @@ footer {
 		padding: 150px 0 100px;
 
 		.footer-information {
-			span {
+			h5 {
 				color: #1e2945;
 				font-family: "Qanelas - Medium";
 				font-size: 16px;
 				font-weight: bold;
+				margin-bottom: 10px;
 			}
 			ul {
 				li {
+					margin-bottom: 10px;
 					a {
 						color: #1e2945;
 						font-family: "Qanelas - Regular";
 						font-size: 15px;
 						font-weight: 400;
 						line-height: 26px;
+						transition: all 0.5s ease;
+
+						&:hover {
+							color: rgba(18, 1, 255, 0.966);
+						}
 					}
 				}
 			}
 		}
 		.footer-trader {
-			span {
+			h5 {
 				color: #1e2945;
 				font-family: "Qanelas - Medium";
 				font-size: 16px;
 				font-weight: bold;
+				margin-bottom: 10px;
 			}
 			ul {
 				li {
+					margin-bottom: 10px;
 					a {
 						color: #1e2945;
 						font-family: "Qanelas - Regular";
 						font-size: 15px;
 						font-weight: 400;
 						line-height: 26px;
+						transition: all 0.5s ease;
+
+						&:hover {
+							color: rgba(18, 1, 255, 0.966);
+						}
 					}
 				}
 			}
 		}
 		.footer-contact {
-			span {
+			h5 {
 				color: #1e2945;
 				font-family: "Qanelas - Medium";
 				font-size: 16px;
 				font-weight: bold;
+				margin-bottom: 10px;
 			}
 			ul {
 				li {
+					margin-bottom: 10px;
 					a {
 						color: #1e2945;
 						font-family: "Qanelas - Regular";
 						font-size: 15px;
 						font-weight: 400;
 						line-height: 26px;
+						transition: all 0.5s ease;
+
+
+						&:hover {
+							color: rgba(18, 1, 255, 0.966);
+						}
 					}
 				}
 			}
 		}
 		.footer-app-btns {
-			img {
 
+			img {
+				margin-right: 10px;
+				cursor: pointer;
+				transition: all 0.5s ease;
+
+
+				&:hover {
+					transform: scale(1.1);
+				}
 			}
 		}
 		.footer-social {
@@ -526,12 +639,23 @@ footer {
 				margin-bottom: 30px;
 
 				img {
+					margin-right: 5px;
+					cursor: pointer;
+					transition: all 0.5s ease;
 
+
+					&:hover {
+						transform: scale(1.1);
+					}
 				}
 			}
 			.footer-logo {
 				img {
+					transition: all 0.5s ease;
 
+					&:hover {
+						transform: scale(1.1);
+					}
 				}
 			}
 		}

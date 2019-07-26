@@ -56,8 +56,54 @@ header .header-container .top-header .top-header-left-aside {
 header .header-container .top-header .top-header-left-aside .header-logo {
   margin-right: 30px;
 }
-header .header-container .top-header .top-header-left-aside .header-drop span {
+header .header-container .top-header .top-header-left-aside .header-dropdown {
+  margin: 50px;
+  display: inline-block;
+  position: relative;
+}
+header .header-container .top-header .top-header-left-aside .header-dropdown.active .drop-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  cursor: pointer;
+}
+header .header-container .top-header .top-header-left-aside .header-dropdown .drop-btn {
+  display: inline-block;
   color: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+header .header-container .top-header .top-header-left-aside .header-dropdown .drop-btn span {
+  color: #fff;
+  margin-left: 5px;
+}
+header .header-container .top-header .top-header-left-aside .header-dropdown .drop-menu {
+  box-sizing: border-box;
+  min-width: 100%;
+  position: absolute;
+  top: 115%;
+  transform: translateY(-15px) scale(0.9);
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+}
+header .header-container .top-header .top-header-left-aside .header-dropdown .drop-menu ul li a {
+  color: #fff;
+  display: block;
+  padding: 10px;
+}
+header .header-container .top-header .top-header-left-aside .header-dropdown .drop-menu ul li:hover {
+  background-color: #8e44ad;
+  color: white;
+  cursor: pointer;
 }
 header .header-container .top-header .top-header-right-aside {
   display: flex;
@@ -75,6 +121,9 @@ header .header-container .top-header .top-header-right-aside .header-menu a:last
   border-right: 1px solid #fff;
   padding-right: 30px;
 }
+header .header-container .top-header .top-header-right-aside .header-menu a:hover {
+  color: #00f9ff;
+}
 header .header-container .top-header .top-header-right-aside .enter-site {
   display: flex;
   align-items: center;
@@ -88,9 +137,13 @@ header .header-container .top-header .top-header-right-aside .enter-site .log-in
   cursor: pointer;
   font-size: 15px;
   font-weight: 500;
+  outline: none;
 }
 header .header-container .top-header .top-header-right-aside .enter-site .log-in button:hover {
   border: 1px solid #fff;
+}
+header .header-container .top-header .top-header-right-aside .enter-site .log-in button:active {
+  transform: scale(1.1);
 }
 header .header-container .top-header .top-header-right-aside .enter-site .sign-up button {
   color: #fff;
@@ -100,9 +153,13 @@ header .header-container .top-header .top-header-right-aside .enter-site .sign-u
   cursor: pointer;
   font-size: 15px;
   font-weight: 500;
+  outline: none;
 }
 header .header-container .top-header .top-header-right-aside .enter-site .sign-up button:hover {
   border: 1px solid #fff;
+}
+header .header-container .top-header .top-header-right-aside .enter-site .sign-up button:active {
+  transform: scale(1.1);
 }
 header .header-text-btn {
   margin-top: 100px;
@@ -174,6 +231,12 @@ header .header-text-btn .header-btn button:active {
 .advantages .advantages-container .advantages-cards .advantages-card-unit .card-image {
   margin-right: 21px;
 }
+.advantages .advantages-container .advantages-cards .advantages-card-unit .card-image img {
+  transition: all 0.5s ease;
+}
+.advantages .advantages-container .advantages-cards .advantages-card-unit .card-image img:hover {
+  transform: scale(1.2);
+}
 .advantages .advantages-container .advantages-cards .advantages-card-unit .card-content p {
   color: #1e2945;
   font-size: 15px;
@@ -203,6 +266,9 @@ header .header-text-btn .header-btn button:active {
 .conditions .tab-container .tab-list .tab.active {
   color: #2e73fe;
   border-bottom: 2px solid #2e73fe;
+}
+.conditions .tab-container .tab-list .tab:hover {
+  color: #2e73fe;
 }
 .conditions .tab-container .content-wrap {
   margin-top: 10px;
@@ -358,11 +424,15 @@ footer .footer-container {
   align-items: flex-start;
   padding: 150px 0 100px;
 }
-footer .footer-container .footer-information span {
+footer .footer-container .footer-information h5 {
   color: #1e2945;
   font-family: "Qanelas - Medium";
   font-size: 16px;
   font-weight: bold;
+  margin-bottom: 10px;
+}
+footer .footer-container .footer-information ul li {
+  margin-bottom: 10px;
 }
 footer .footer-container .footer-information ul li a {
   color: #1e2945;
@@ -370,12 +440,20 @@ footer .footer-container .footer-information ul li a {
   font-size: 15px;
   font-weight: 400;
   line-height: 26px;
+  transition: all 0.5s ease;
 }
-footer .footer-container .footer-trader span {
+footer .footer-container .footer-information ul li a:hover {
+  color: rgba(18, 1, 255, 0.966);
+}
+footer .footer-container .footer-trader h5 {
   color: #1e2945;
   font-family: "Qanelas - Medium";
   font-size: 16px;
   font-weight: bold;
+  margin-bottom: 10px;
+}
+footer .footer-container .footer-trader ul li {
+  margin-bottom: 10px;
 }
 footer .footer-container .footer-trader ul li a {
   color: #1e2945;
@@ -383,12 +461,20 @@ footer .footer-container .footer-trader ul li a {
   font-size: 15px;
   font-weight: 400;
   line-height: 26px;
+  transition: all 0.5s ease;
 }
-footer .footer-container .footer-contact span {
+footer .footer-container .footer-trader ul li a:hover {
+  color: rgba(18, 1, 255, 0.966);
+}
+footer .footer-container .footer-contact h5 {
   color: #1e2945;
   font-family: "Qanelas - Medium";
   font-size: 16px;
   font-weight: bold;
+  margin-bottom: 10px;
+}
+footer .footer-container .footer-contact ul li {
+  margin-bottom: 10px;
 }
 footer .footer-container .footer-contact ul li a {
   color: #1e2945;
@@ -396,7 +482,33 @@ footer .footer-container .footer-contact ul li a {
   font-size: 15px;
   font-weight: 400;
   line-height: 26px;
+  transition: all 0.5s ease;
+}
+footer .footer-container .footer-contact ul li a:hover {
+  color: rgba(18, 1, 255, 0.966);
+}
+footer .footer-container .footer-app-btns img {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+footer .footer-container .footer-app-btns img:hover {
+  transform: scale(1.1);
 }
 footer .footer-container .footer-social .social-icons {
   margin-bottom: 30px;
+}
+footer .footer-container .footer-social .social-icons img {
+  margin-right: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+footer .footer-container .footer-social .social-icons img:hover {
+  transform: scale(1.1);
+}
+footer .footer-container .footer-social .footer-logo img {
+  transition: all 0.5s ease;
+}
+footer .footer-container .footer-social .footer-logo img:hover {
+  transform: scale(1.1);
 }

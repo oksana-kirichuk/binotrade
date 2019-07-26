@@ -9,3 +9,7 @@ $('.tab-container .tab').click(function () {
 	$('.tab-container .content' + target).addClass('active');
 
 });
+
+$('.header-dropdown > .drop-btn').click(function () {
+    $(this).parent().toggleClass('active');
+});
