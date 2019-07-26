@@ -51,13 +51,22 @@
     border-right: none;
   }
   header .header-text-btn {
-    margin-top: 50px;
+    margin-top: 100px;
   }
   header .header-text-btn .header-text h2 {
     font-size: 3rem;
   }
   .advantages .advantages-container .advantages-cards .advantages-card-unit {
     padding: 20px;
+  }
+  .conditions {
+    padding-top: 200px;
+  }
+  .conditions .tab-container .tab-list {
+    margin-bottom: 50px;
+  }
+  .conditions .tab-container .tab-list .tab {
+    text-align: center;
   }
   .conditions .tab-container .content-wrap .content .tab-container-content .tab-container-content-text {
     width: 50%;
@@ -94,13 +103,13 @@
     font-size: 0.9rem;
   }
   .mobile-block .mobile-container .mobile-container-right-aside .mobile-image-first {
-    transform: translateY(-220px);
+    transform: translateY(-170px);
   }
   .mobile-block .mobile-container .mobile-container-right-aside .mobile-image-first img {
     width: 150px;
   }
   .mobile-block .mobile-container .mobile-container-right-aside .mobile-image-second {
-    transform: translateY(-250px);
+    transform: translateY(-200px);
   }
   .mobile-block .mobile-container .mobile-container-right-aside .mobile-image-second img {
     width: 150px;
@@ -121,10 +130,169 @@
   .info-block .info-container .info-container-text .info-right-aside p {
     font-size: 1rem;
   }
+  footer .footer-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  footer .footer-container .footer-app-btns {
+    margin-top: 20px;
+  }
   footer .footer-container .footer-app-btns img {
     width: 100px;
   }
+  footer .footer-container .footer-social {
+    margin-top: 20px;
+  }
   footer .footer-container .footer-social .social-icons img {
     width: 32px;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    min-height: 800px;
+  }
+  header .header-container {
+    padding: 0 20px;
+  }
+  header .header-container .top-header {
+    padding: 20px 0;
+  }
+  header .header-container .top-header .top-header-left-aside {
+    margin-bottom: 10px;
+  }
+  header .header-container .top-header .top-header-left-aside .header-dropdown {
+    margin: 0;
+  }
+  header .header-container .top-header .top-header-left-aside .header-dropdown .drop-btn {
+    padding: 0;
+  }
+  header .header-container .top-header .top-header-right-aside {
+    margin-top: 10px;
+    justify-content: space-between;
+  }
+  header .header-container .top-header .top-header-right-aside .header-menu a {
+    margin-right: 10px;
+  }
+  header .header-container .top-header .top-header-right-aside .enter-site .log-in button {
+    display: none;
+  }
+  header .header-container .top-header .top-header-right-aside .enter-site .log-in span {
+    display: block;
+    color: #fff;
+    margin-right: 10px;
+  }
+  header .header-container .top-header .top-header-right-aside .enter-site .sign-up button {
+    display: none;
+  }
+  header .header-container .top-header .top-header-right-aside .enter-site .sign-up span {
+    display: block;
+    color: #fff;
+  }
+  header .header-text-btn {
+    margin-top: 0px;
+  }
+  header .header-text-btn .header-text h2 {
+    font-size: 2.5rem;
+    line-height: 50px;
+  }
+  .advantages .advantages-container .advantages-cards {
+    margin-top: -70%;
+  }
+  .advantages .advantages-container .advantages-cards .advantages-card-unit {
+    width: 100%;
+  }
+  .conditions {
+    padding: 220px 0 50px 0;
+  }
+  .conditions .tab-container .tab-list {
+    flex-direction: column;
+  }
+  .conditions .tab-container .content-wrap .content .tab-container-content {
+    display: block;
+  }
+  .conditions .tab-container .content-wrap .content .tab-container-content .tab-container-content-text {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .conditions .tab-container .content-wrap .content .tab-container-content .tab-container-content-text h3 {
+    text-align: center;
+  }
+  .conditions .tab-container .content-wrap .content .tab-container-content .tab-container-content-text p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .conditions .tab-container .content-wrap .content .tab-container-content .tab-container-content-image {
+    text-align: center;
+  }
+  .brands .brands-container .brands-title h4 {
+    font-size: 1rem;
+    margin-bottom: 0;
+    padding-top: 20px;
+  }
+  .brands .brands-container .brands-image {
+    padding-bottom: 35px;
+  }
+  .brands .brands-container .brands-image img {
+    width: 260px;
+  }
+  .mobile-block {
+    padding: 0 0 20px 0;
+    background-image: none;
+    background-color: #2e73fe;
+  }
+  .mobile-block .mobile-container {
+    display: block;
+  }
+  .mobile-block .mobile-container .mobile-container-left-aside .mobile-container-left-aside-content {
+    width: 100%;
+    transform: none;
+    margin-bottom: 30px;
+  }
+  .mobile-block .mobile-container .mobile-container-left-aside .mobile-container-left-aside-content h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  .mobile-block .mobile-container .mobile-container-left-aside .mobile-container-left-aside-content p {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .mobile-block .mobile-container .mobile-container-right-aside {
+    justify-content: center;
+  }
+  .mobile-block .mobile-container .mobile-container-right-aside .mobile-image-first {
+    transform: none;
+  }
+  .mobile-block .mobile-container .mobile-container-right-aside .mobile-image-first img {
+    height: 250px;
+  }
+  .mobile-block .mobile-container .mobile-container-right-aside .mobile-image-second {
+    transform: none;
+  }
+  .mobile-block .mobile-container .mobile-container-right-aside .mobile-image-second img {
+    height: 250px;
+  }
+  .info-block .info-container h3 {
+    padding-top: 30px;
+    margin-bottom: 15px;
+  }
+  .info-block .info-container .info-container-text .info-left-aside {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  footer .footer-container {
+    display: block;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  footer .footer-container .footer-information {
+    margin-bottom: 40px;
+  }
+  footer .footer-container .footer-trader {
+    margin-bottom: 40px;
+  }
+  footer .footer-container .footer-contact {
+    margin-bottom: 40px;
   }
 }

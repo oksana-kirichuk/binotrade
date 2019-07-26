@@ -371,7 +371,7 @@
             }
         }
         .header-text-btn {
-            margin-top: 50px;
+            margin-top: 100px;
 
             .header-text {
     
@@ -424,15 +424,15 @@
     }
     
     .conditions {
-        
+        padding-top: 200px;
     
     
         .tab-container {
             .tab-list {
-                
+                margin-bottom: 50px;
         
                 .tab {
-                  
+                  text-align: center;
                     
                 }
             }
@@ -512,14 +512,14 @@
             }
             .mobile-container-right-aside {
                 .mobile-image-first {
-                    transform: translateY(-220px);
+                    transform: translateY(-170px);
     
                     img {
                         width: 150px;
                     }
                 }
                 .mobile-image-second {
-                    transform: translateY(-250px);
+                    transform: translateY(-200px);
     
                     img {
                         width: 150px;
@@ -561,7 +561,8 @@
        
     
         .footer-container {
-            
+            flex-wrap: wrap;
+            justify-content: space-around;
     
             .footer-information {
                 h5 {
@@ -602,7 +603,8 @@
                 }
             }
             .footer-app-btns {
-    
+                margin-top: 20px;
+
                 img {
                     width: 100px;
     
@@ -610,6 +612,8 @@
                 }
             }
             .footer-social {
+                margin-top: 20px;
+
                 .social-icons {
                   
                     img {
@@ -632,15 +636,23 @@
 
 @media (max-width: 600px) {
     header {
+        min-height: 800px;
         .header-container {
+            padding: 0 20px;
             .top-header {
+                padding: 20px 0;
                 .top-header-left-aside {
+                    margin-bottom: 10px;
                     .header-logo {
                         img {
                         }
                     }
                     .header-dropdown {
+                        margin: 0;
+
                         .drop-btn {
+                            padding: 0;
+
                             span {
                                
                             }
@@ -659,19 +671,34 @@
                     }
                 }
                 .top-header-right-aside {
+                    margin-top: 10px;
+                    justify-content: space-between;
                     .header-menu {
                         a {
+                            margin-right: 10px;
                         }
                     }
                     .enter-site {
     
                         .log-in {
                             button {
+                                display: none;
+                            }
+                            span {
+                                display: block;
+                                color: #fff;
+                                margin-right: 10px;
                             }
                         }
                         .sign-up {
         
                             button {
+                                display: none;
+                            }
+                            span {
+                                display: block;
+                                color: #fff;
+
                             }
                         }
                         
@@ -680,11 +707,13 @@
             }
         }
         .header-text-btn {
+            margin-top: 0px;
             .header-text {
     
     
                 h2 {
-                   
+                 font-size: 2.5rem;
+                 line-height: 50px;  
                 }
     
                 p {
@@ -707,11 +736,11 @@
     
         .advantages-container {
             .advantages-cards {
-               
+                margin-top: -70%;
     
     
                 .advantages-card-unit {
-                    
+                    width: 100%;
      
                     .card-image {
     
@@ -731,12 +760,12 @@
     }
     
     .conditions {
-        
+        padding: 220px 0 50px 0;
     
     
         .tab-container {
             .tab-list {
-                
+                flex-direction: column;
         
                 .tab {
                   
@@ -754,20 +783,23 @@
                     }
                     
                     .tab-container-content {
-                       
+                        display: block;
     
                         .tab-container-content-text {
-                         
+                            width: 100%;
+                            margin-bottom: 30px;
     
                             h3 {
-                                
+                              text-align: center;  
                             }
     
                             p {
-                               
+                                font-size: 1.1rem;
+                                text-align: center;
                             }
                         }
                         .tab-container-content-image {
+                            text-align: center;
                             img {
     
                             }
@@ -786,43 +818,57 @@
     
             .brands-title {
                 h4 {
-                   
+                    font-size: 1rem;
+                    margin-bottom: 0;
+                    padding-top: 20px;
                 }
             }
             .brands-image {
-              
+                padding-bottom: 35px;
                 img {
+                    width: 260px;
                 }
             }
         }
     }
     
     .mobile-block {
+        padding: 0 0 20px 0;
+        background-image: none;
+        background-color: #2e73fe;
         .mobile-container {
+            display: block;
             .mobile-container-left-aside {
                 .mobile-container-left-aside-content {
-    
+                    width: 100%;
+                    transform: none;
+                    margin-bottom: 30px;
                     h4 {
-    
+                        font-size: 1.5rem;
+                        text-align: center;
+                        font-weight: bold;
                     }
                     p {
-                       
+                        text-align: center;
+                        font-size: 1rem;
                     }
                 }
             }
             .mobile-container-right-aside {
+                justify-content: center;
+
                 .mobile-image-first {
-                  
+                    transform: none;
     
                     img {
-    
+                        height: 250px;
                     }
                 }
                 .mobile-image-second {
-                    
+                    transform: none;
     
                     img {
-    
+                        height: 250px;
                     }
                 }
             }
@@ -834,20 +880,22 @@
     
         .info-container {
             h3 {
-                
+                padding-top: 30px;
+                margin-bottom: 15px;
             }
             .info-container-text {
                 .info-left-aside {
-                   
-                    
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 10px;
+
                     p {
-                       
                     }
                 }
     
                 .info-right-aside {
                     p {
-                       
+
                     }
                 }
             }
@@ -858,9 +906,12 @@
        
     
         .footer-container {
-            
+            display: block;
+            padding-bottom: 20px;
+            text-align: center;
     
             .footer-information {
+                margin-bottom: 40px;
                 h5 {
                   
                 }
@@ -875,6 +926,7 @@
                 }
             }
             .footer-trader {
+                margin-bottom: 40px;
                 h5 {
                     
                 }
@@ -887,6 +939,7 @@
                 }
             }
             .footer-contact {
+                margin-bottom: 40px;
                 h5 {
                    
                 }

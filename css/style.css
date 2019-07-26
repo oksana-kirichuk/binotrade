@@ -145,6 +145,9 @@ header .header-container .top-header .top-header-right-aside .enter-site .log-in
 header .header-container .top-header .top-header-right-aside .enter-site .log-in button:active {
   transform: scale(1.1);
 }
+header .header-container .top-header .top-header-right-aside .enter-site .log-in span {
+  display: none;
+}
 header .header-container .top-header .top-header-right-aside .enter-site .sign-up button {
   color: #fff;
   background-color: transparent;
@@ -160,6 +163,9 @@ header .header-container .top-header .top-header-right-aside .enter-site .sign-u
 }
 header .header-container .top-header .top-header-right-aside .enter-site .sign-up button:active {
   transform: scale(1.1);
+}
+header .header-container .top-header .top-header-right-aside .enter-site .sign-up span {
+  display: none;
 }
 header .header-text-btn {
   margin-top: 100px;
