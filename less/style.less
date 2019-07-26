@@ -186,7 +186,7 @@ header {
 		.advantages-cards {
 			display: flex;
 			flex-wrap: wrap;
-			margin-top: -25%;
+			margin-top: -15%;
 			margin-left: 25%;
 			background-color: #fff;
 			box-shadow: 0 40px 40px rgba(0, 0, 0, 0.03);
@@ -228,22 +228,31 @@ header {
 }
 
 .conditions {
-	padding: 50px;
-	
+	padding: 250px 0 150px 0;
+	background-color: #f2f2f2;
+
+
 	.tab-container {
 		.tab-list {
 			overflow: auto;
+			background-color: #fff;
+			margin-bottom: 100px;
+			display: flex;
+			justify-content: space-around;
+			border-radius: 5px;
 	
 			.tab {
-				display: inline-block;
-				float: left;
 				padding: 10px 15px;
 				border-bottom: 1px solid #eee;
 				cursor: pointer;
-				color: #888;
+				color: #000000;
+				font-family: "Qanelas - Regular";
+				font-size: 15px;
+				font-weight: 400;
 	
 				&.active {
-					color: #000;
+					color: #2e73fe;
+					border-bottom: 2px solid #2e73fe;
 				}
 			}
 		}
@@ -260,6 +269,7 @@ header {
 				visibility: hidden;
 				transition: all 0.3s ease;
 	
+
 				&.active {
 					position: relative;
 					opacity: 1;
@@ -267,6 +277,39 @@ header {
 				}
 				> p {
 					line-height: 170%;
+				}
+				
+				.tab-container-content {
+					display: flex;
+					align-items: center;
+					justify-content: space-around;
+
+					.tab-container-content-text {
+						width: 30%;
+
+						h3 {
+							color: #1e2945;
+							font-family: "Qanelas - Regular";
+							font-size: 40px;
+							font-weight: 400;
+							letter-spacing: 0.09px;
+							line-height: 40px;
+							margin-bottom: 20px;
+						}
+
+						p {
+							color: #1e2945;
+							font-family: "Qanelas - Regular";
+							font-size: 18px;
+							font-weight: 400;
+							line-height: 29px;
+						}
+					}
+					.tab-container-content-image {
+						img {
+
+						}
+					}
 				}
 			}
 		}
@@ -303,6 +346,7 @@ header {
 
 .mobile-block {
 	background-color: #f2f2f2;
+	padding-top: 150px;
 
 	.mobile-container {
 		background-image: url(../img/mobile-bg.png);
@@ -339,6 +383,7 @@ header {
 		}
 		.mobile-container-right-aside {
 			display: flex;
+			
 
 			.mobile-image-first {
 				img {
@@ -400,13 +445,14 @@ footer {
 	background-image: url(../img/footer-bg.png);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: contain;
+	background-size: cover;
 	background-color: #f2f2f2;
 
 	.footer-container {
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
+		padding: 150px 0 100px;
 
 		.footer-information {
 			span {
