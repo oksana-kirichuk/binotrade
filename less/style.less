@@ -346,18 +346,18 @@ header {
 
 .mobile-block {
 	background-color: #f2f2f2;
-	padding-top: 150px;
+	padding-top: 280px;
+	background-image: url(../img/mobile-bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 
 	.mobile-container {
-		background-image: url(../img/mobile-bg.png);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: contain;
+		padding: 150px 0 0 0;
 		display: flex;
 
 		.mobile-container-left-aside {
 			display: flex;
-			align-items: center;
 			justify-content: center;
 
 			.mobile-container-left-aside-content {
@@ -370,6 +370,7 @@ header {
 					line-height: 39px;
 					color: #fff;
 					font-family: "Qanelas - Regular";
+					margin-bottom: 30px;
 
 				}
 				p {
@@ -386,11 +387,15 @@ header {
 			
 
 			.mobile-image-first {
+				transform: translateY(-300px);
+
 				img {
 
 				}
 			}
 			.mobile-image-second {
+				transform: translateY(-350px);
+
 				img {
 
 				}
@@ -401,8 +406,8 @@ header {
 
 .info-block {
 	background-color: #f2f2f2;
-	padding: 200px 0;
-	
+	padding: 0 0 200px 0;
+
 	.info-container {
 		h3 {
 			color: #1e2945;

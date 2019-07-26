@@ -271,18 +271,18 @@ header .header-text-btn .header-btn button:active {
 }
 .mobile-block {
   background-color: #f2f2f2;
-  padding-top: 150px;
-}
-.mobile-block .mobile-container {
+  padding-top: 280px;
   background-image: url(../img/mobile-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+.mobile-block .mobile-container {
+  padding: 150px 0 0 0;
   display: flex;
 }
 .mobile-block .mobile-container .mobile-container-left-aside {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .mobile-block .mobile-container .mobile-container-left-aside .mobile-container-left-aside-content {
@@ -295,6 +295,7 @@ header .header-text-btn .header-btn button:active {
   line-height: 39px;
   color: #fff;
   font-family: "Qanelas - Regular";
+  margin-bottom: 30px;
 }
 .mobile-block .mobile-container .mobile-container-left-aside .mobile-container-left-aside-content p {
   font-family: "Qanelas - Regular";
@@ -306,9 +307,15 @@ header .header-text-btn .header-btn button:active {
 .mobile-block .mobile-container .mobile-container-right-aside {
   display: flex;
 }
+.mobile-block .mobile-container .mobile-container-right-aside .mobile-image-first {
+  transform: translateY(-300px);
+}
+.mobile-block .mobile-container .mobile-container-right-aside .mobile-image-second {
+  transform: translateY(-350px);
+}
 .info-block {
   background-color: #f2f2f2;
-  padding: 200px 0;
+  padding: 0 0 200px 0;
 }
 .info-block .info-container h3 {
   color: #1e2945;
