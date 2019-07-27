@@ -10,11 +10,3 @@ $('.tab-container .tab').click(function () {
 
 });
 
-$('.header-dropdown > .drop-btn').click(function () {
-	$(this).parent().toggleClass('active');
-});
-
-
-$(body).click(function () {
-	$('.header-dropdown > .drop-btn').parent().removeClass('active');
-});

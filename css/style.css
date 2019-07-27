@@ -56,56 +56,14 @@ header .header-container .top-header .top-header-left-aside {
 header .header-container .top-header .top-header-left-aside .header-logo {
   margin-right: 30px;
 }
-header .header-container .top-header .top-header-left-aside .header-dropdown {
-  margin: 50px;
-  display: inline-block;
-  position: relative;
-}
-header .header-container .top-header .top-header-left-aside .header-dropdown.active .drop-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: none;
-  cursor: pointer;
-}
-header .header-container .top-header .top-header-left-aside .header-dropdown .drop-btn {
-  display: inline-block;
+header .header-container .top-header .top-header-left-aside .header-select select {
+  border: none;
+  background-color: transparent;
   color: #fff;
-  padding: 10px 20px;
-  border-radius: 3px;
-  cursor: pointer;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
+  outline: none;
 }
-header .header-container .top-header .top-header-left-aside .header-dropdown .drop-btn span {
-  color: #fff;
-  margin-left: 5px;
-}
-header .header-container .top-header .top-header-left-aside .header-dropdown .drop-menu {
-  box-sizing: border-box;
-  min-width: 100%;
-  position: absolute;
-  top: 115%;
-  transform: translateY(-15px) scale(0.9);
-  left: 0;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.2s ease;
-}
-header .header-container .top-header .top-header-left-aside .header-dropdown .drop-menu ul li a {
-  text-align: center;
-  border-bottom: 1px solid #eee;
-  display: block;
-  padding: 10px;
-  color: #000;
-}
-header .header-container .top-header .top-header-left-aside .header-dropdown .drop-menu ul li:hover {
-  background-color: #6b52f8;
-  color: #fff;
-  cursor: pointer;
+header .header-container .top-header .top-header-left-aside .header-select select:hover {
+  background-color: #2e73fe;
 }
 header .header-container .top-header .top-header-right-aside {
   display: flex;
@@ -253,6 +211,7 @@ header .header-text-btn .header-btn button:active {
 .conditions {
   padding: 250px 0 150px 0;
   background-color: #f2f2f2;
+  position: relative;
 }
 .conditions .tab-container .tab-list {
   overflow: auto;

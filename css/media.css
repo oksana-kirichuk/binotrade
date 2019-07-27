@@ -170,11 +170,8 @@
   header .header-container .top-header .top-header-left-aside {
     margin-bottom: 10px;
   }
-  header .header-container .top-header .top-header-left-aside .header-dropdown {
+  header .header-container .top-header .top-header-left-aside .header-select {
     margin: 0;
-  }
-  header .header-container .top-header .top-header-left-aside .header-dropdown .drop-btn {
-    padding: 0;
   }
   header .header-container .top-header .top-header-right-aside {
     margin-top: 10px;
