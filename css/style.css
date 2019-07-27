@@ -96,13 +96,15 @@ header .header-container .top-header .top-header-left-aside .header-dropdown .dr
   transition: all 0.2s ease;
 }
 header .header-container .top-header .top-header-left-aside .header-dropdown .drop-menu ul li a {
-  color: #fff;
+  text-align: center;
+  border-bottom: 1px solid #eee;
   display: block;
   padding: 10px;
+  color: #000;
 }
 header .header-container .top-header .top-header-left-aside .header-dropdown .drop-menu ul li:hover {
-  background-color: #8e44ad;
-  color: white;
+  background-color: #6b52f8;
+  color: #fff;
   cursor: pointer;
 }
 header .header-container .top-header .top-header-right-aside {
