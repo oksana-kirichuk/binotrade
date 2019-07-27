@@ -217,8 +217,10 @@
         .info-container {
             h3 {
                 font-size: 2rem;
+                text-align: center;
             }
             .info-container-text {
+                padding: 0 50px;
                 .info-left-aside {
                    
                     
@@ -283,7 +285,11 @@
             .footer-app-btns {
     
                 img {
-                  
+                    display: block;
+                    
+                    &:first-child {
+                        margin-bottom: 20px; 
+                    }
     
                    
                 }
@@ -565,6 +571,7 @@
             justify-content: space-around;
     
             .footer-information {
+                padding-right: 50px;
                 h5 {
                   
                 }
@@ -603,7 +610,7 @@
                 }
             }
             .footer-app-btns {
-                margin-top: 20px;
+                margin-top: 0px;
 
                 img {
                     width: 100px;
@@ -638,7 +645,7 @@
     header {
         min-height: 800px;
         .header-container {
-            padding: 0 20px;
+            padding: 0;
             .top-header {
                 padding: 20px 0;
                 .top-header-left-aside {
@@ -814,7 +821,7 @@
         
     
         .brands-container {
-            
+            transform: translateY(-15%);
     
             .brands-title {
                 h4 {
@@ -882,8 +889,10 @@
             h3 {
                 padding-top: 30px;
                 margin-bottom: 15px;
+                text-align: center;
             }
             .info-container-text {
+                padding: 0 20px;
                 .info-left-aside {
                     display: block;
                     width: 100%;
@@ -912,6 +921,8 @@
     
             .footer-information {
                 margin-bottom: 40px;
+                padding-right: 0;
+
                 h5 {
                   
                 }
@@ -952,9 +963,9 @@
                 }
             }
             .footer-app-btns {
-    
                 img {
-                  
+                    margin: 0 auto;
+ 
     
                    
                 }
@@ -978,4 +989,10 @@
             }
         }
     }
+}
+
+@media (max-width: 420px) {
+
+    
+
 }

@@ -29,12 +29,22 @@
   }
   .info-block .info-container h3 {
     font-size: 2rem;
+    text-align: center;
+  }
+  .info-block .info-container .info-container-text {
+    padding: 0 50px;
   }
   .info-block .info-container .info-container-text .info-left-aside p {
     font-size: 1.1rem;
   }
   .info-block .info-container .info-container-text .info-right-aside p {
     font-size: 1.1rem;
+  }
+  footer .footer-container .footer-app-btns img {
+    display: block;
+  }
+  footer .footer-container .footer-app-btns img:first-child {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 900px) {
@@ -134,8 +144,11 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  footer .footer-container .footer-information {
+    padding-right: 50px;
+  }
   footer .footer-container .footer-app-btns {
-    margin-top: 20px;
+    margin-top: 0px;
   }
   footer .footer-container .footer-app-btns img {
     width: 100px;
@@ -152,7 +165,7 @@
     min-height: 800px;
   }
   header .header-container {
-    padding: 0 20px;
+    padding: 0;
   }
   header .header-container .top-header {
     padding: 20px 0;
@@ -224,6 +237,9 @@
   .conditions .tab-container .content-wrap .content .tab-container-content .tab-container-content-image {
     text-align: center;
   }
+  .brands .brands-container {
+    transform: translateY(-15%);
+  }
   .brands .brands-container .brands-title h4 {
     font-size: 1rem;
     margin-bottom: 0;
@@ -275,6 +291,10 @@
   .info-block .info-container h3 {
     padding-top: 30px;
     margin-bottom: 15px;
+    text-align: center;
+  }
+  .info-block .info-container .info-container-text {
+    padding: 0 20px;
   }
   .info-block .info-container .info-container-text .info-left-aside {
     display: block;
@@ -288,11 +308,15 @@
   }
   footer .footer-container .footer-information {
     margin-bottom: 40px;
+    padding-right: 0;
   }
   footer .footer-container .footer-trader {
     margin-bottom: 40px;
   }
   footer .footer-container .footer-contact {
     margin-bottom: 40px;
+  }
+  footer .footer-container .footer-app-btns img {
+    margin: 0 auto;
   }
 }
