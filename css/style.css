@@ -23,11 +23,11 @@ a {
   list-style: none;
   text-decoration: none;
   color: #000;
+  box-sizing: border-box;
 }
 .wrap {
   max-width: 1200px;
   margin: 0 auto;
-  box-sizing: border-box;
 }
 header {
   background-image: url(../img/header-background.png);
@@ -98,6 +98,8 @@ header .header-container .top-header .top-header-right-aside .enter-site .log-in
   font-size: 15px;
   font-weight: 500;
   outline: none;
+  border: 1px solid transparent;
+  transition: all 0.5s ease;
 }
 header .header-container .top-header .top-header-right-aside .enter-site .log-in button:hover {
   border: 1px solid #fff;
@@ -117,6 +119,8 @@ header .header-container .top-header .top-header-right-aside .enter-site .sign-u
   font-size: 15px;
   font-weight: 500;
   outline: none;
+  border: 1px solid transparent;
+  transition: all 0.5s ease;
 }
 header .header-container .top-header .top-header-right-aside .enter-site .sign-up button:hover {
   border: 1px solid #fff;
@@ -163,9 +167,14 @@ header .header-text-btn .header-btn button {
   transition: all 0.3s ease;
   font-size: 18px;
   font-weight: 500;
+  cursor: pointer;
 }
 header .header-text-btn .header-btn button:active {
   transform: scale(1.1);
+}
+header .header-text-btn .header-btn button:hover {
+  box-shadow: 0 6px 15px 0 rgba(4, 100, 138, 0.75);
+  border: none;
 }
 .advantages {
   position: absolute;
@@ -215,7 +224,6 @@ header .header-text-btn .header-btn button:active {
 }
 .conditions .tab-container .tab-list {
   overflow: auto;
-  background-color: #fff;
   margin-bottom: 100px;
   display: flex;
   justify-content: space-around;
@@ -225,9 +233,9 @@ header .header-text-btn .header-btn button:active {
   padding: 10px 15px;
   border-bottom: 1px solid #eee;
   cursor: pointer;
-  color: #000000;
+  color: #000;
   font-family: "Qanelas - Regular";
-  font-size: 15px;
+  font-size: 2rem;
   font-weight: 400;
 }
 .conditions .tab-container .tab-list .tab.active {

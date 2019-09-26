@@ -1,3 +1,9 @@
+// AOS Animation
+
+AOS.init();
+
+// Tabulator 
+
 $('.tab-container .tab').click(function () {
 
 	var target = $(this).attr('data-tab');

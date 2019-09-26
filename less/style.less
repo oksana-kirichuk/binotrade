@@ -4,9 +4,8 @@ html, body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
-	
-	
 }
+
 	h1, h2, h3, h4, h5, h6, ul, li, span, p, div, a {
 	margin: 0;
 	padding: 0;
@@ -15,16 +14,12 @@ html, body {
 	list-style: none;
 	text-decoration: none;
 	color: #000;
+	box-sizing: border-box;
 }
-
-// LESS VARS, MIXINS
-
-// LESS VARS, MIXINS -------- END
 
 .wrap {
 	max-width: 1200px;
 	margin: 0 auto;
-	box-sizing: border-box;
 }
 
 header {
@@ -53,13 +48,9 @@ header {
 
 				.header-logo {
 					margin-right: 30px;
-
-					img {
-					}
 				}
-				.header-select {
-					
 
+				.header-select {
 					select {
 						border: none;
 						background-color: transparent;
@@ -69,13 +60,10 @@ header {
 						&:hover {
 							background-color: #2e73fe;
 						}
-
-						option {
-							
-						}
 					}
 				}
 			}
+
 			.top-header-right-aside {
 				display: flex;
 				align-items: center;
@@ -88,7 +76,6 @@ header {
 						cursor: pointer;
 						font-size: 15px;
 						font-weight: 500;
-
 						
 						&:last-child {
 							border-right: 1px solid #fff;
@@ -97,16 +84,15 @@ header {
 
 						&:hover {
 							color: #00f9ff;
-							
 						}
 					}
 				}
+
 				.enter-site {
 					display: flex;
 					align-items: center;
 
 					.log-in {
-	
 						button {
 							color: #fff;
 							margin-right: 30px;
@@ -117,6 +103,8 @@ header {
 							font-size: 15px;
 							font-weight: 500;
 							outline: none;
+							border: 1px solid transparent;
+							transition: all 0.5s ease;
 
 							&:hover {
 								border: 1px solid #fff;
@@ -131,8 +119,8 @@ header {
 							display: none;
 						}
 					}
+
 					.sign-up {
-	
 						button {
 							color: #fff;
 							background-color: transparent;
@@ -142,7 +130,8 @@ header {
 							font-size: 15px;
 							font-weight: 500;
 							outline: none;
-
+							border: 1px solid transparent;
+							transition: all 0.5s ease;
 
 							&:hover {
 								border: 1px solid #fff;
@@ -156,9 +145,7 @@ header {
 						span {
 							display: none;
 						}
-						
 					}
-					
 				}
 			}
 		}
@@ -187,7 +174,6 @@ header {
 				letter-spacing: 0.36px;
 				text-align: center;
 				margin-top: 30px;
-
 			}
 		}
 
@@ -204,14 +190,18 @@ header {
 				transition: all 0.3s ease;
 				font-size: 18px;
 				font-weight: 500;
+				cursor: pointer;
 
 				&:active {
 					transform: scale(1.1);
 				}
 
+				&:hover {
+					box-shadow: 0 6px 15px 0 rgba(4, 100, 138, 0.75);                            
+					border: none;
+				}
 			}
 		}
-		
 	}
 }
 
@@ -228,7 +218,6 @@ header {
 			background-color: #fff;
 			box-shadow: 0 40px 40px rgba(0, 0, 0, 0.03);
 			border-radius: 6px;
-
 
 			.advantages-card-unit {
 				width: 50%;
@@ -248,14 +237,12 @@ header {
 				.card-image {
 					margin-right: 21px;
 
-
 					img {
 						transition: all 0.5s ease;
 
 						&:hover {
 							transform: scale(1.2);
 						}
-
 					}
 				}
 
@@ -279,7 +266,6 @@ header {
 	.tab-container {
 		.tab-list {
 			overflow: auto;
-			background-color: #fff;
 			margin-bottom: 100px;
 			display: flex;
 			justify-content: space-around;
@@ -289,9 +275,9 @@ header {
 				padding: 10px 15px;
 				border-bottom: 1px solid #eee;
 				cursor: pointer;
-				color: #000000;
+				color: #000;
 				font-family: "Qanelas - Regular";
-				font-size: 15px;
+				font-size: 2rem;
 				font-weight: 400;
 	
 				&.active {
@@ -301,10 +287,10 @@ header {
 
 				&:hover {
 					color: #2e73fe;
-
 				}
 			}
 		}
+
 		.content-wrap {
 			margin-top: 10px;
 			position: relative;
@@ -318,12 +304,12 @@ header {
 				visibility: hidden;
 				transition: all 0.3s ease;
 	
-
 				&.active {
 					position: relative;
 					opacity: 1;
 					visibility: visible;
 				}
+
 				> p {
 					line-height: 170%;
 				}
@@ -354,17 +340,11 @@ header {
 							line-height: 29px;
 						}
 					}
-					.tab-container-content-image {
-						img {
-
-						}
-					}
 				}
 			}
 		}
 	}
 }
-
 
 .brands {
 	background-color: #f2f2f2;
@@ -384,12 +364,10 @@ header {
 				margin-bottom: 50px;
 			}
 		}
+
 		.brands-image {
 			padding-bottom: 150px;
 			text-align: center;
-
-			img {
-			}
 		}
 	}
 }
@@ -423,6 +401,7 @@ header {
 					margin-bottom: 30px;
 
 				}
+
 				p {
 					font-family: "Qanelas - Regular";
 					font-size: 18px;
@@ -432,23 +411,16 @@ header {
 				}
 			}
 		}
+
 		.mobile-container-right-aside {
 			display: flex;
-			
 
 			.mobile-image-first {
 				transform: translateY(-300px);
-
-				img {
-
-				}
 			}
+
 			.mobile-image-second {
 				transform: translateY(-350px);
-
-				img {
-
-				}
 			}
 		}
 	}
@@ -468,6 +440,7 @@ header {
 			line-height: 39px;
 			margin-bottom: 32px;
 		}
+
 		.info-container-text {
 			.info-left-aside {
 				float: left;
@@ -517,6 +490,7 @@ footer {
 				font-weight: bold;
 				margin-bottom: 10px;
 			}
+
 			ul {
 				li {
 					margin-bottom: 10px;
@@ -536,6 +510,7 @@ footer {
 				}
 			}
 		}
+
 		.footer-trader {
 			h5 {
 				color: #1e2945;
@@ -544,6 +519,7 @@ footer {
 				font-weight: bold;
 				margin-bottom: 10px;
 			}
+
 			ul {
 				li {
 					margin-bottom: 10px;
@@ -563,6 +539,7 @@ footer {
 				}
 			}
 		}
+
 		.footer-contact {
 			h5 {
 				color: #1e2945;
@@ -571,6 +548,7 @@ footer {
 				font-weight: bold;
 				margin-bottom: 10px;
 			}
+
 			ul {
 				li {
 					margin-bottom: 10px;
@@ -590,6 +568,7 @@ footer {
 				}
 			}
 		}
+
 		.footer-app-btns {
 
 			img {
@@ -602,6 +581,7 @@ footer {
 				}
 			}
 		}
+
 		.footer-social {
 			.social-icons {
 				margin-bottom: 30px;
@@ -616,6 +596,7 @@ footer {
 					}
 				}
 			}
+			
 			.footer-logo {
 				img {
 					transition: all 0.5s ease;
