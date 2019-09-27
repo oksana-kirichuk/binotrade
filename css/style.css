@@ -61,6 +61,7 @@ header .header-container .top-header .top-header-left-aside .header-select selec
   background-color: transparent;
   color: #fff;
   outline: none;
+  cursor: pointer;
 }
 header .header-container .top-header .top-header-left-aside .header-select select:hover {
   background-color: #2e73fe;
