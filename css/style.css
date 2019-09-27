@@ -237,6 +237,8 @@ header .header-text-btn .header-btn button:hover {
   font-family: "Qanelas - Regular";
   font-size: 2rem;
   font-weight: 400;
+  margin-right: 30px;
+  text-align: center;
 }
 .conditions .tab-container .tab-list .tab.active {
   color: #2e73fe;
